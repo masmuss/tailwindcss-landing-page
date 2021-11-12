@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      OpenSans: ["Open Sans, sans-serif"]
+      sans: ["Open Sans, sans-serif"]
     },
     container: {
       center: true,
