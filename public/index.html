@@ -15,27 +15,31 @@
 <body>
    <!-- header -->
    <header>
-      <nav class="container py-6 flex items-center justify-between">
+      <nav class="container py-6 flex items-center justify-between flex-wrap">
          <h1 class="text-3xl font-bold text-gray-700">Santri<span class="text-blue-400">Digital</span></h1>
-         <ul class="hidden sm:flex gap-12">
-            <li class="cursor-pointer">
-               <a href="" class="text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">Home</a>
-            </li>
-            <li class="cursor-pointer">
-               <a href="" class="text-gray-500 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">About Us</a>
-            </li>
-            <li class="cursor-pointer">
-               <a href="" class="text-gray-500 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">Courses</a>
-            </li>
-            <li class="cursor-pointer">
-               <a href="" class="text-gray-500 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">Gallery</a>
-            </li>
-            <li class="cursor-pointer">
-               <a href="" class="text-gray-500 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">Contact</a>
-            </li>
-         </ul>
-         <div class="flex sm:hidden flex-1 justify-end">
+         
+         <button type="button" class="flex sm:hidden flex-1 justify-end" id="nav-toggler">
             <i class="bx bx-menu-alt-right text-2xl"></i>
+         </button>
+
+         <div class="hidden top-navbar w-full md:inline-flex md:flex-grow md:w-auto md:mt-0 mt-6" id="nav-menu">
+            <div class="lg:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-center flex flex-col md:h-auto gap-6">
+               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+                  <span>Home</span>
+               </a>
+               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+                  <span>About us</span>
+               </a>
+               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+                  <span>Services</span>
+               </a>
+               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+                  <span>Gallery</span>
+               </a>
+               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+                  <span>Contacts</span>
+               </a>
+            </div>
          </div>
       </nav>
    </header>
@@ -94,5 +98,15 @@
       <!-- end content -->
    </section>
    <!-- end about us -->
+
+   <script>
+      const navToggler = document.querySelector('#nav-toggler');
+      const navbar = document.querySelector('#nav-menu');
+
+      navToggler.addEventListener('click', function() {
+         navbar.classList.toggle('hidden')
+      });
+
+   </script>
 </body>
 </html>
