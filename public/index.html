@@ -12,22 +12,22 @@
    <link rel="stylesheet" href="assets/css/style.css">
    <title>Home</title>
 </head>
-<body>
+<body class="bg-gray-50">
    <!-- header -->
    <header>
-      <nav class="container py-6 flex items-center justify-between flex-wrap">
-         <h1 class="text-3xl font-bold text-gray-700">Santri<span class="text-blue-400">Digital</span></h1>
+      <nav class="container py-6 flex items-center justify-between flex-wrap 2xl:px-10">
+         <h1 class="text-3xl font-bold text-gray-700">Santri<span class="text-blue-500">Digital</span></h1>
          
-         <button type="button" class="flex sm:hidden flex-1 justify-end" id="nav-toggler">
+         <button type="button" class="flex sm:hidden flex-1 justify-end ring-0" id="nav-toggler">
             <i class="bx bx-menu-alt-right text-2xl"></i>
          </button>
 
          <div class="hidden top-navbar w-full md:inline-flex md:flex-grow md:w-auto md:mt-0 mt-6" id="nav-menu">
             <div class="lg:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-center flex flex-col md:h-auto gap-6">
-               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+               <a href="/" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
                   <span>Home</span>
                </a>
-               <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
+               <a href="#about-us" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
                   <span>About us</span>
                </a>
                <a href="" class="md:inline-flex md:w-auto w-full text-gray-700 hover:text-gray-400 uppercase tracking-wide text-sm font-semibold">
@@ -47,58 +47,244 @@
 
    <!-- hero -->
    <section id="home">
-      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28 2xl:px-10">
          <!-- content -->
          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h2 class="text-gray-700 text-2xl md:text-3xl lg:text-4xl text-center lg:text-left mb-6 font-bold">
-               Saatnya Santri Berinovasi dan Berkarya
+            <h1 class="text-gray-700 text-3xl md:text-3xl lg:text-5xl text-center lg:text-left mb-6 font-bold">
+               1000 Santri digital
+            </h1>
+            <h2 class="text-gray-700 text-2xl md:text-3xl lg:text-3xl text-center lg:text-left mb-6 font-semibold">
+               Saatnya Santri Berinovasi dan Berkarya dengan #DigitalBisa
             </h2>
             <p class="text-gray-700 text-center lg:text-left mb-6">
-               Wadah untuk pengembangan para santri agar siap menghadapi dunia digital.
+               Wadah untuk pengembangan para santri agar siap menghadapi dunia digital
             </p>
             <div class="flex justify-center flex-wrap gap-6">
-               <button type="button" class="btn bg-gray-700 text-gray-100 hover:bg-gray-100 hover:text-gray-700">About Us</button>
+               <button type="button" class="btn bg-gradient-to-br from-blue-600 to-blue-500 text-gray-100 hover:from-blue-500 hover:to-blue-400 transition-colors duration-200">About Us</button>
             </div>
          </div>
          <!-- end content -->
 
          <!-- image -->
          <div class="flex flex-1 justify-center mb-10 md:mb-16 lg:mb-0">
-            <img src="assets/img/hero.svg" alt="hero" class="w-3/4 h-3/4 md:w-1/2 md:h-1/2 lg:w-3/4 lg:h-3/4">
+            <img src="assets/img/hero.svg" alt="hero" class="w-3/4 h-3/4 md:w-1/2 md:h-1/2 lg:w-3/5">
          </div>
          <!-- end image -->
       </div>
    </section>
    <!-- end hero -->
 
-   <!-- about us -->
-   <section id="about-us" class="bg-gray-100 py-20 mt-20">
-      <!-- header -->
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-         <h1 class="text-3xl text-center text-gray-800 font-bold">About Us</h1>
-      </div>
-      <!-- endheader -->
-
+   <!-- prologue -->
+   <section class="py-20 mt-20 2xl:px-10">
       <!-- content -->
-      <div class="container flex flex-col-reverse lg:flex-row items-center">
+      <div class="container flex flex-col lg:flex-row items-center">
          <!-- image -->
-         <div class="flex flex-1 justify-center mt-10 md:mt-16 lg:mt-0">
-            <img src="assets/img/undraw_pair_programming_re_or4x.svg" alt="hero" class="w-3/4 h-3/4 md:w-1/2 md:h-1/2 lg:w-3/4 lg:h-3/4">
+         <div class="flex flex-1 justify-center mb-10 md:mb-16 lg:mb-0 lg:p-3">
+            <iframe class="w-full rounded-md mx-2.5" height="315" src="https://www.youtube.com/embed/ZJaQXofxwQA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
          <!-- end image -->
 
          <!-- content -->
          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <p class="text-gray-700 text-center lg:text-left mt-4">
-               Kami <span class="font-semibold">SantriDigital</span> adalah perusahaan yang didirikan oleh para lulusan pondok pesantren guna mendorong dan mendukung penuh terhadap pemenuhan IPTEK ( Ilmu Pengetahuan Teknologi) melalui Program 1000 Santri Digital ini dengan terus mengawal proses literasi digital mereka dari mulai belajar Agama di Pesantren hingga belajar keahlian digital, bisnis dsbnya.
+            <p class="text-gray-700 text-justify lg:text-left lg:text-lg px-2 lg:px-4">
+               Kami dari Pesantren Go Digital Telkom Indonesia, mendorong dan mendukung penuh terhadap pemenuhan IPTEK ( Ilmu Pengetahuan Teknologi) melalui Program 1000 Santri Digital ini dengan terus mengawal proses literasi digital mereka dari mulai belajar Agama di Pesantren hingga belajar keahlian digital, bisnis dsbnya. Sehingga tumbuh dan berkembang di sektor industri dan setiap sektor lainnya yang siap guna di dunia kerja, serta menjadi manfaat dengan ide kreatifitas digital mereka sebagai Santri Digital Preneur di dunia Bisnis untuk mendorong Ekonomi Bangsa.
             </p>
          </div>
          <!-- end content -->
       </div>
       <!-- end content -->
    </section>
+   <!-- end prologue -->
+
+   <!-- our team -->
+   <section class="py-20 mt-10 2xl:px-10" id="teams">
+      <!-- header -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+         <h1 class="text-3xl text-center text-gray-800 font-bold">Tim Kami</h1>
+      </div>
+      <!-- endheader -->
+
+      <!-- content -->
+      <div class="container">
+         <!--Card 1-->
+         <div class="mt-10 flex flex-col lg:flex-row lg:justify-around">
+            <div class="py-6 lg:py-0">
+               <img class="w-3/5 lg:h-3/4 mx-auto" src="assets/img/hustler.svg" alt="Hustler">
+               <div class="mt-4">
+                  <h3 class="font-bold text-xl text-center">Hustler</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <img class="w-3/5 lg:h-3/4 mx-auto" src="assets/img/hipster.svg" alt="Hipster">
+               <div class="mt-4">
+                  <h3 class="font-bold text-xl text-center">Hipster</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <img class="w-3/5 lg:h-3/4 mx-auto" src="assets/img/hacker.svg" alt="Hacker">
+               <div class="mt-4">
+                  <h3 class="font-bold text-xl text-center">Hacker</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <img class="w-3/5 lg:h-3/4 mx-auto" src="assets/img/preacher.svg" alt="Preacher">
+               <div class="mt-4">
+                  <h3 class="font-bold text-xl text-center">Preacher</h3>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+   </section>
+   <!-- end our team -->
+
+   <!-- about us -->
+   <section class="py-20 mt-10 2xl:px-10" id="about-us">
+      <!-- header -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+         <h1 class="text-3xl text-center text-gray-800 font-bold">Apa itu 1000 Santri Digital</h1>
+      </div>
+      <!-- endheader -->
+
+      <!-- content -->
+      <div class="container">
+         <p class="text-gray-700 text-left lg:text-center px-2 lg:px-0 mt-4 text-lg">
+            Program belajar keahlian digital melalui praktik dan studi kasus untuk seluruh para Santri Pondok Pesantren sehingga siap guna di industri dan dunia kerja atau menjadi Santri Digital untuk Berinovasi dan Berkarya.
+         </p>
+      </div>
+   </section>
    <!-- end about us -->
 
+   <!-- graduation -->
+   <section class="py-20 mt-10 2xl:px-10" id="about-us">
+      <!-- header -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+         <h1 class="text-3xl text-center text-gray-800 font-bold">Data Graduasi Santri</h1>
+      </div>
+      <!-- endheader -->
+
+      <!-- content -->
+      <div class="container">
+         <div class="mt-10 flex flex-col lg:flex-row lg:justify-around">
+            <div class="py-6 lg:py-0">
+               <h1 class="text-blue-600 text-5xl font-bold text-center">30</h1>
+               <div class="mt-2">
+                  <h3 class="font-bold text-xl text-center">Santri hustler</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <h1 class="text-blue-600 text-5xl font-bold text-center">35</h1>
+               <div class="mt-2">
+                  <h3 class="font-bold text-xl text-center">Santri hipster</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <h1 class="text-blue-600 text-5xl font-bold text-center">20</h1>
+               <div class="mt-2">
+                  <h3 class="font-bold text-xl text-center">Santri hacker</h3>
+               </div>
+            </div>
+            <div class="py-6 lg:py-0">
+               <h1 class="text-blue-600 text-5xl font-bold text-center">67</h1>
+               <div class="mt-2">
+                  <h3 class="font-bold text-xl text-center">Santri preacher</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end graduation -->
+
+   <!-- online class -->
+   <section class="py-20 mt-10 2xl:px-10" id="about-us">
+      <!-- header -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+         <h1 class="text-3xl text-center text-gray-800 font-bold">Kelas Belajar Digital Untuk Santri</h1>
+      </div>
+      <!-- endheader -->
+
+      <!-- content -->
+      <div class="container">
+         <p class="text-gray-700 text-left lg:text-center px-2 lg:px-0 mx-4 mb-8 text-lg">
+            Berikut Kelas Belajar Keahlian untuk para Santri yang paling dibutuhkan Industri Digital.
+         </p>
+
+         <div class="flex flex-col lg:flex-row lg:gap-12 lg:justify-center m-auto">
+            <!-- hustler -->
+            <div class="py-4 w-1/3">
+               <div class="shadow-lg p-0 rounded-md bg-white content-div"
+                     style="background-image: url('assets/img/hustler.jpg');">
+                  <div>
+                     <div class="w-full h-48 image-cover rounded-t-md"></div>
+                     <div class="py-7 px-4 bg-white rounded-b-md">
+                        <span class="block text-lg text-gray-800 font-bold tracking-wide">Hustler</span>
+                        <p class="text-gray-700">
+                           Mereka atau Seorang yang Ahli dalam mengembangkan Bisnis dan Strateginya
+                        </p> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end hustler -->
+
+            <!-- hipster -->
+            <div class="py-4 w-1/3">
+               <div class="shadow-lg p-0 rounded-md bg-white content-div"
+                     style="background-image: url('assets/img/hipster.jpg');">
+                  <div>
+                     <div class="w-full h-48 image-cover rounded-t-md"></div>
+                     <div class="py-7 px-4 bg-white rounded-b-md">
+                           <span class="block text-lg text-gray-800 font-bold tracking-wide">Hipster</span>
+                           <p class="text-gray-700">
+                              Mereka atau Seorang memiliki kemampuan merancang Produk dan Pengalaman Penggunaan
+                           </p> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end hipster -->
+         </div>
+         
+         <div class="flex flex-col lg:flex-row lg:gap-12 lg:justify-center m-auto">
+            <!-- hustler -->
+            <div class="py-4 w-1/3">
+               <div class="shadow-lg p-0 rounded-md bg-white content-div"
+                     style="background-image: url('assets/img/hustler.jpg');">
+                  <div>
+                     <div class="w-full h-48 image-cover rounded-t-md"></div>
+                     <div class="py-7 px-4 bg-white rounded-b-md">
+                        <span class="block text-lg text-gray-800 font-bold tracking-wide">Hacker</span>
+                        <p class="text-gray-700">
+                           Mereka atau Seorang yang ahli dalam membuat Perangkat Lunak, Sistem dan Aplikasi Digital
+                        </p> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end hustler -->
+
+            <!-- hipster -->
+            <div class="py-4 w-1/3">
+               <div class="shadow-lg p-0 rounded-md bg-white content-div"
+                     style="background-image: url('assets/img/hipster.jpg');">
+                  <div>
+                     <div class="w-full h-48 image-cover rounded-t-md"></div>
+                     <div class="py-7 px-4 bg-white rounded-b-md">
+                           <span class="block text-lg text-gray-800 font-bold tracking-wide">Preacher</span>
+                           <p class="text-gray-700">
+                              Mereka atau Seorang yang Ahli dan Faham dalam Ilmu Agama dan Penyampai Dakwah ke Ummat
+                           </p> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end hipster -->
+         </div>
+
+      </div>
+   </section>
+   <!-- end online class -->
+   
    <script>
       const navToggler = document.querySelector('#nav-toggler');
       const navbar = document.querySelector('#nav-menu');
